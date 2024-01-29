@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Nuevo Producto</h1>
+    <button routerLink="/">Regresar</button>
+    <form [formGroup]="formProduct" (ngSubmit)="addProduct()">
+        <label>Tarea</label>
+        <input type="text" formControlName="tarea">
+        <label>Autor</label>
+        <input type="text" formControlName="Asignación">
+        <button type="submit">Añadir</button>
+    </form>
+</div>
